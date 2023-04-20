@@ -77,14 +77,14 @@ ROUTES possui as rotas URL padrão </p>
 <p> Para cadastrar um novo paciente deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
 
 ```http
-  GET /api/patient
+  POST /api/patient
 ```
 
-<p> Sera  **obrigatorio** 
+<p> Sera  **obrigatorio** </p>
 1. emergency_contact
 2. date_of_birth
 3. cpf
-</p>
+
 <br>
 <i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
 <em>Exemplo</em>
@@ -115,7 +115,7 @@ ROUTES possui as rotas URL padrão </p>
 <p>O seu cadastro gero um identificador pessoal!!</p>
 
 
-<h2>Atualizando Patients</h2>
+<h3>Atualizando Patients</h3>
 <p> Para atualizar um paciente deve preencher os dados requeridos e informar o identificador(id) do paciente que quer atualizar você deve usar a seguinte rota: </p>
 
 ```http
@@ -135,7 +135,7 @@ ROUTES possui as rotas URL padrão </p>
 
 <p>Patient atualizado com sucesso!!</p>
 
-<h2>Atualizando Status Service </h2>
+<h3>Atualizando Status Service </h3>
 <p> Para atualizar o status de um paciente deve preencher o estado do atendimento  e informar o identificador(id) do paciente que quer atualizar você deve usar a seguinte rota: </p>
 
 ```http
@@ -161,7 +161,7 @@ ROUTES possui as rotas URL padrão </p>
 <em>Exemplo de sucess!</em>
 <img src="./src/img/putpatientstatus.png">
 
-<h2>Encontrando todos os Patients</h2>
+<h3>Encontrando todos os Patients</h3>
 
 <p> Para encontrar os patients você deve informar o service_status que deseja chamar no url no caso de não chamar um service_status especifico sera retornado todos os patients você deve usar a seguinte rota: </p>
 
@@ -181,7 +181,7 @@ ROUTES possui as rotas URL padrão </p>
 <em>Exemplo</em>
 <img src="./src/img/getpatients.png">
 
-<h2>Encontrando Patients pelo id</h2>
+<h3>Encontrando Patients pelo id</h3>
 
 <p> Para encontrar os patients pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
 
@@ -200,7 +200,7 @@ ROUTES possui as rotas URL padrão </p>
 <em>Exemplo de sucess!</em>
 <img src="./src/img/getpatientid.png">
 
-<h2>DELETE dos Patients pelo id</h2>
+<h3>DELETE dos Patients pelo id</h3>
 <p> Para deletar os patients pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
 ```http
   DELETE /api/patients/:id
@@ -217,3 +217,27 @@ ROUTES possui as rotas URL padrão </p>
 
 <em>Exemplo de sucess!</em>
 <img src="./src/img/deletesucess.png">
+
+
+<h2>Gerenciando Doctor</h2>
+
+<h3>Cadastro</h3>
+<p> Para cadastrar um novo Doctor deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
+
+```http
+  POST /api/doctors
+```
+<p> Será  **obrigatorio** </p>
+1.  date of birth
+2.  institution of teach training
+3.  register to CRM/UF 
+4.  clinical specialization
+
+<br>
+<i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/createdoctorsucess.png">
+
+<em> Exemplo de que o cpf ja exista</em>
+<img src="./src/img/notsucescreate.png">
