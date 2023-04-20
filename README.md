@@ -80,11 +80,12 @@ ROUTES possui as rotas URL padrão </p>
   GET /api/patient
 ```
 
-<p> Sera  **obrigatorio** </p>
+<p> Sera  **obrigatorio** 
 1. emergency_contact
 2. date_of_birth
 3. cpf
-
+</p>
+<br>
 <i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
 <em>Exemplo</em>
 <img src="./src/img/newpatient.png">
