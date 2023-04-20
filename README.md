@@ -16,14 +16,14 @@ como linguagem base do nosso projeto
 <img src="./src/img/js.png">
 <br>
 
-<li>PostgreSQL<li/>
+<li>PostgreSQL</li>
 <p>como gerenciador de banco de dados</p>
 <img  src="./src/img/post.png">
 <br>
 
 
-<li>Sequelize<li/>
-<p>com o Sequelize podemos usar a linguagem de programação que já estamos usando no backend para conectar e operar o banco de dados.<p>
+<li>Sequelize</li>
+<p>com o Sequelize podemos usar a linguagem de programação que já estamos usando no backend para conectar e operar o banco de dados.</p>
 <img src="./src/img/seq.png"> 
 <br>
 
