@@ -154,7 +154,11 @@ ROUTES possui as rotas URL padrão </p>
 
 <i> Será verificado se o service_status esta correto e se o id existe </i>
 
-<em>Exemplo</em>
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/putnotfound.png>
+
+<em>Exemplo de sucess!</em>
 <img src="./src/img/putpatientstatus.png">
 
 <h2>Encontrando todos os Patients</h2>
@@ -195,3 +199,20 @@ ROUTES possui as rotas URL padrão </p>
 
 <em>Exemplo de sucess!</em>
 <img src="./src/img/getpatientid.png">
+
+<h2>DELETE dos Patients pelo id</h2>
+<p> Para deletar os patients pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+```http
+  DELETE /api/patients/:id
+```
+<p> Sera  **obrigatorio** </p>
+
+1. informar id 
+2. que o id esteja no banco de dados 
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/deletenotfound.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/deletesucess.png">
