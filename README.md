@@ -12,9 +12,9 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 
 
 <li>ES6(ECMASCRIPT)</li>
-como linguagem base do nosso projeto
+<p>como linguagem base do nosso projeto</p>
 <img src="./src/img/js.png">
-<br>
+<br><br>
 
 <li>PostgreSQL</li>
 <p>como gerenciador de banco de dados</p>
