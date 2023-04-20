@@ -1,14 +1,12 @@
 <h1 align="center"> Lab Medicine </h1>
 <p align="center">
-<a href="#Sobre o App" >Lab medicine é um gerenciador de API baseado no funcionamento de uma clínica, esse aplicativo foi criado para poder adicionar pacientes, médicos e enfermeiros, você também pode atualizar, mostrar os dados de todos ou de cada um individualmente e excluí-los de suas listas e registrar cada vez que é marcada uma consulta e com qual médico o paciente foi atendido</a>
+Lab medicine é um gerenciador de API baseado no funcionamento de uma clínica, esse aplicativo foi criado para poder adicionar pacientes, médicos e enfermeiros, você também pode atualizar, mostrar os dados de todos ou de cada um individualmente e excluí-los de suas listas e registrar cada vez que é marcada uma consulta e com qual médico o paciente foi atendido
 
-<a href="#Objetivo">Este aplicativo ajudará você a manter seus dados organizados criando um identificador para cada pessoa, também oferece
+Este aplicativo ajudará você a manter seus dados organizados criando um identificador para cada pessoa, também oferece
 a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
-</a>
-
 </p>
 
-<h2> Tecnologias utilizadas<h2/>
+<h2 align="center"> Tecnologias utilizadas<h2/>
 
 
 <li>ES6(ECMASCRIPT)</li>
@@ -40,4 +38,35 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 
 
 <h2>Descrição de como executar</h2>
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/miche0077/Project-LabMedicine.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd my-project
+```
+
+Instale as dependências
+
+```bash
+  npm install
+  npm install --save sequelize
+  npm install express --save
+  npm install pg pg-hstore
+```
+
+Inicie o servidor
+
+```bash
+  npm run 
+
+```
+
 
