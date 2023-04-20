@@ -2,11 +2,11 @@ const Patient = require("../../models/patientModel");
 
 async function findPatientId(request, response) {
   try {
-    const { findId } = request.params;
-    const foundPatient = await Patient.findByPk(findId);
+    const { id } = request.params;
+    const foundPatient = await Patient.findByPk(id);
     if (!foundPatient) {
       return response.status(404).json({
-        error: `Patient number: ${findId} not found.`,
+        error: `Patient number: ${id} not found.`,
       });
     }
 

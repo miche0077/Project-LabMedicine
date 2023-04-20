@@ -161,14 +161,14 @@ ROUTES possui as rotas URL padrão </p>
 
 <p> Para encontrar os patients você deve informar o service_status que deseja chamar no url no caso de não chamar um service_status especifico sera retornado todos os patients você deve usar a seguinte rota: </p>
 
-```
-http
+```http
   GET /api/patients?service_status=
 ```
 <p> Sera  **obrigatorio** </p>
 
 1. service_status
-2. preencher com uma das seguintes opções
+2. preencher com uma das seguintes opções:
+
     ```"WAITING_FOR_SERVICE",
       "IN_SERVICE",
       "ATTENDED",
@@ -177,3 +177,21 @@ http
 <em>Exemplo</em>
 <img src="./src/img/getpatients.png">
 
+<h2>Encontrando Patients pelo id</h2>
+
+<p> Para encontrar os patients pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+
+```http
+  GET /api/patients/:id
+```
+<p> Sera  **obrigatorio** </p>
+
+1. informar id 
+2. que o id esteja no banco de dados 
+
+ 
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/getpatients.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/getpatientid.png">
