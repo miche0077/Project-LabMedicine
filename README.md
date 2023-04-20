@@ -9,19 +9,19 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 <h2> Tecnologias utilizadas<h2/>
 <ul>
 <li>ES6(ECMASCRIPT)
-<img width="480" height="380" src="./src/img/js.png">
+<img src="./src/img/js.png">
 </li>
 <li>PostgreSQL
-<img width="480" height="380" src="./src/img/post.png">
+<img  src="./src/img/post.png">
 <li/>
 <li>Sequelize
-<img width="480" height="380" src="./src/img/seq.png"> 
+<img src="./src/img/seq.png"> 
 <li/>
 <li>Express
-<img width="480" height="380"  src="./src/img/express.png">
+<img src="./src/img/express.png">
 </li>
 <li>Insomnia
-<img width="480" height="380"  src="./src/img/inso.png">
+<img src="./src/img/inso.png">
 </li>
 </ul>
 
