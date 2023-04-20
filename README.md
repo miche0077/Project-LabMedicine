@@ -205,6 +205,7 @@ ROUTES possui as rotas URL padrão </p>
 ```http
   DELETE /api/patients/:id
 ```
+
 <p> Sera  **obrigatorio** </p>
 
 1. informar id 
