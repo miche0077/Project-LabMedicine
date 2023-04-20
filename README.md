@@ -10,11 +10,11 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 
 <h2> Tecnologias utilizadas<h2/>
 
-<ul>
-<li>ES6(ECMASCRIPT)
+
+<li>ES6(ECMASCRIPT)</li>
 como linguagem base do nosso projeto
 <img src="./src/img/js.png">
-</li>
+<br>
 
 <li>PostgreSQL<li/>
 <p>como gerenciador de banco de dados</p>
@@ -37,7 +37,7 @@ como linguagem base do nosso projeto
 <img src="./src/img/inso.png">
 <br>
 
-</ul>
+
 
 <h2>Descrição de como executar</h2>
 
