@@ -117,6 +117,7 @@ ROUTES possui as rotas URL padrão </p>
 
 <h2>Atualizando Patients</h2>
 <p> Para atualizar um paciente deve preencher os dados requeridos e informar o identificador(id) do paciente que quer atualizar você deve usar a seguinte rota: </p>
+
 ```http
   PUT /api/patient/:id
 ```
@@ -133,3 +134,46 @@ ROUTES possui as rotas URL padrão </p>
 <img src="./src/img/putpatient.png">
 
 <p>Patient atualizado com sucesso!!</p>
+
+<h2>Atualizando Status Service </h2>
+<p> Para atualizar o status de um paciente deve preencher o estado do atendimento  e informar o identificador(id) do paciente que quer atualizar você deve usar a seguinte rota: </p>
+
+```http
+  PUT /api/patients/:id/service_status
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1. service_status
+2. preencher com uma das seguintes opções
+    ```"WAITING_FOR_SERVICE",
+      "IN_SERVICE",
+      "ATTENDED",
+      "NOT_ATTENDED"```
+3. informar ID
+
+<i> Será verificado se o service_status esta correto e se o id existe </i>
+
+<em>Exemplo</em>
+<img src="./src/img/putpatientstatus.png">
+
+<h2>Encontrando todos os Patients</h2>
+
+<p> Para encontrar os patients você deve informar o service_status que deseja chamar no url no caso de não chamar um service_status especifico sera retornado todos os patients você deve usar a seguinte rota: </p>
+
+```
+http
+  GET /api/patients?service_status=
+```
+<p> Sera  **obrigatorio** </p>
+
+1. service_status
+2. preencher com uma das seguintes opções
+    ```"WAITING_FOR_SERVICE",
+      "IN_SERVICE",
+      "ATTENDED",
+      "NOT_ATTENDED"```
+
+<em>Exemplo</em>
+<img src="./src/img/getpatients.png">
+
