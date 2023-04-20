@@ -63,7 +63,7 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  npm run 
+  npm start
 
 ```
 <h2> Como esta organizado?</h2>
@@ -79,9 +79,13 @@ ROUTES possui as rotas URL padrão </p>
 ```http
   GET /api/patient
 ```
-<p> Sera o **obrigatorio** </p>
+
+<p> Sera  **obrigatorio** </p>
+
 1. emergency_contact
 2. date_of_birth
 3. cpf
-<p> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </p>
+
+<i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
+##Example
 <img src="./src/img/newpatient.png">
