@@ -39,8 +39,6 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 
 <h2>Descrição de como executar</h2>
 
-## Rodando localmente
-
 Clone o projeto
 
 ```bash
@@ -68,5 +66,22 @@ Inicie o servidor
   npm run 
 
 ```
+<h2> Como esta organizado?</h2>
+<p>
+Pasta SRC, contém subdiretórios para controladores, banco de dados, modelos e rotas. 
+O diretório CONTROLLERS possui subdiretórios para os módulos do projeto, incluindo atendimentos, médicos, enfermeiros e pacientes. 
+O diretório DATABASE contém o arquivo index.js com dados de conexão com o banco de dados.
+O diretório MODELS inclui arquivos de modelo para criar  controladores com base em seus atributos.
+ROUTES possui as rotas URL padrão </p>
 
-
+<h2>Gerenciando Patients</h2>
+<p> Para cadastrar um novo paciente deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
+```http
+  GET /api/patient
+```
+<p> Sera o **obrigatorio** </p>
+1. emergency_contact
+2. date_of_birth
+3. cpf
+<p> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </p>
+<img src="./src/img/newpatient.png">
