@@ -4,10 +4,10 @@ Lab medicine é um gerenciador de API baseado no funcionamento de uma clínica, 
 
 Este aplicativo ajudará você a manter seus dados organizados criando um identificador para cada pessoa, também oferece
 a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
+
 </p>
 
 <h2 align="center"> Tecnologias utilizadas<h2/>
-
 
 <li>ES6(ECMASCRIPT)</li>
 <p>como linguagem base do nosso projeto</p>
@@ -18,7 +18,6 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 <p>como gerenciador de banco de dados</p>
 <img  src="./src/img/post.png">
 <br>
-
 
 <li>Sequelize</li>
 <p>com o Sequelize podemos usar a linguagem de programação que já estamos usando no backend para conectar e operar o banco de dados.</p>
@@ -34,8 +33,6 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 <p>Este framework vai nos ajudar a testar nossas requisições corretamente</p>
 <img src="./src/img/inso.png">
 <br>
-
-
 
 <h2>Descrição de como executar</h2>
 
@@ -66,6 +63,7 @@ Inicie o servidor
   npm start
 
 ```
+
 <h2> Como esta organizado?</h2>
 <p>
 Pasta SRC, contém subdiretórios para controladores, banco de dados, modelos e rotas. 
@@ -77,12 +75,12 @@ ROUTES possui as rotas URL padrão </p>
 <h2>Gerenciando Patients</h2>
 <h3>Cadastro</h3>
 <p> Para cadastrar um novo paciente deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
+
 ```http
   GET /api/patient
 ```
 
 <p> Sera  **obrigatorio** </p>
-
 1. emergency_contact
 2. date_of_birth
 3. cpf
@@ -92,7 +90,8 @@ ROUTES possui as rotas URL padrão </p>
 <img src="./src/img/newpatient.png">
 
 <h2>Resposta de sucesso</h2>
-<p>
+
+```
 {
 	"id": 3,
 	"full_name": "carol",
@@ -108,10 +107,11 @@ ROUTES possui as rotas URL padrão </p>
 	"total_atendimentos": 0,
 	"updatedAt": "2023-04-19T17:36:59.210Z",
 	"createdAt": "2023-04-19T17:36:59.210Z"
-}
-o seu cadastro gero um identificador pessoal!!
-</p>
+    }
+```
 
+
+<p>O seu cadastro gero um identificador pessoal!!</p>
 
 
 <h2>Atualizando Patients</h2>
@@ -127,3 +127,8 @@ o seu cadastro gero um identificador pessoal!!
 3. cpf
 
 <i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
+
+<em>Exemplo</em>
+<img src="./src/img/putpatient.png">
+
+<p>Patient atualizado com sucesso!!</p>
