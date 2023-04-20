@@ -1,21 +1,21 @@
 const { Sequelize } = require("sequelize");
 const conection = require("../database/index");
 
-const Medico = conection.define("medico", {
+const Doctor = conection.define("doctor", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
-  nome_completo: {
+  full_name: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  genero: {
+  gender: {
     type: Sequelize.STRING,
   },
-  data_de_nascimento: {
+  date_of_birth: {
     type: Sequelize.DATEONLY,
     allowNull: false,
   },
@@ -23,37 +23,37 @@ const Medico = conection.define("medico", {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  telefone: {
+  phone_number: {
     type: Sequelize.STRING,
   },
-  instituicao_de_ensino_da_formacao: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  cadastro_do_CRM_UF: {
+  institution_of_teach_training: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  especializacao_clinica: {
+  register_to_CRM_UF: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  clinical_specialization: {
     type: Sequelize.ENUM(
-      "CLINICO_GERAL",
-      "ANESTESISTA",
-      "DERMATOLOGIA",
-      "GINECOLOGIA",
-      "NEUROLOGIA",
-      "PEDIATRIA",
-      "PSIQUIATRIA",
-      "ORTOPEDIA"
+      "GENERAL_PRACTITIONER",
+      "ANESTHESIA",
+      "DERMATOLOGY",
+      "GYNECOLOGY",
+      "NEUROLOGY",
+      "PEDIATRICS",
+      "PSYCHIATRY",
+      "ORTHOPEDICS"
     ),
   },
-  estado_no_sistema: {
-    type: Sequelize.ENUM("ATIVO", "INATIVO"),
-    defaultValue: "ATIVO",
+  status_in_the_system: {
+    type: Sequelize.ENUM("ACTIVE", "INACTIVE"),
+    defaultValue: "ACTIVE",
   },
-  total_de_atendimentos_realizados: {
+  total_atendimentos: {
     type: Sequelize.INTEGER,
     defaultValue: 0,
   },
 });
 
-module.exports = Medico;
+module.exports = Doctor;

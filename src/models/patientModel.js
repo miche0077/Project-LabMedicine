@@ -1,21 +1,21 @@
 const Sequelize = require("sequelize");
 const conection = require("../database/index");
 
-const Paciente = conection.define("paciente", {
+const Patient = conection.define("patient", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
-  nome_completo: {
+  full_name: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  genero: {
+  gender: {
     type: Sequelize.STRING,
   },
-  data_nascimento: {
+  date_of_birth: {
     type: Sequelize.DATEONLY,
     allowNull: false,
   },
@@ -24,36 +24,36 @@ const Paciente = conection.define("paciente", {
     unique: true,
     allowNull: false,
   },
-  telefone: {
+  phone_number: {
     type: Sequelize.STRING,
   },
-  contato_de_emergencia: {
+  emergency_contact: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  lista_alergias: {
+  list_of_alergies: {
     type: Sequelize.STRING,
-    defaultValue: "nenhum",
+    defaultValue: "none",
   },
-  lista_de_cuidados_especificos: {
+  list_of_specific_care: {
     type: Sequelize.STRING,
-    defaultValue:"nenhum",
+    defaultValue:"none",
   },
-  convenio: {
+  health_insurance: {
     type: Sequelize.STRING,
-    defaultValue: "nenhum",
+    defaultValue: "none",
   },
-  status_de_atendimento: {
+  service_status: {
     type: Sequelize.ENUM(
-      "AGUARDANDO_ATENDIMENTO",
-      "EM_ATENDIMENTO",
-      "ATENDIDO",
-      "NAO_ATENDIDO"
+      "WAITING_FOR_SERVICE",
+      "IN_SERVICE",
+      "ATTENDED",
+      "NOT_ATTENDED"
     ),
   },
-  total_de_atendimentos_realizados: {
+  total_atendimentos: {
     type: Sequelize.INTEGER,
     defautValue: 0,
   },
 });
-module.exports = Paciente;
+module.exports = Patient;
