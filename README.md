@@ -16,25 +16,26 @@ como linguagem base do nosso projeto
 <img src="./src/img/js.png">
 </li>
 
-<li>PostgreSQL
-como gerenciador de banco de dados
+<li>PostgreSQL<li/>
+<p>como gerenciador de banco de dados</p>
 <img  src="./src/img/post.png">
-<li/>
+<br>
 
-<li>Sequelize
-com o Sequelize podemos usar a linguagem de programação que já estamos usando no backend para conectar e operar o banco de dados.
+
+<li>Sequelize<li/>
+<p>com o Sequelize podemos usar a linguagem de programação que já estamos usando no backend para conectar e operar o banco de dados.<p>
 <img src="./src/img/seq.png"> 
-<li/>
+<br>
 
-<li>Express
-vai nos ajudar a gerenciar requisições de diferentes verbos http em diferente URLs
+<li>Express</li>
+<p>vai nos ajudar a gerenciar requisições de diferentes verbos http em diferente URLs</p>
 <img src="./src/img/express.png">
-</li>
+<br>
 
-<li>Insomnia
-Este framework vai nos ajudar a testar nossas requisições corretamente
+<li>Insomnia</li>
+<p>Este framework vai nos ajudar a testar nossas requisições corretamente</p>
 <img src="./src/img/inso.png">
-</li>
+<br>
 
 </ul>
 
