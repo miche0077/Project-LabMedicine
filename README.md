@@ -9,10 +9,10 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 <h2> Tecnologias utilizadas<h2/>
 <ul>
 <li>ES6(ECMASCRIPT)
-<img width="480" height="380" src="./src/img/javascript_logo.png">
+<img width="480" height="380" src="./src/img/js.png">
 </li>
 <li>PostgreSQL
-<img width="480" height="380" src="./src/img/postgresql.png">
+<img width="480" height="380" src="./src/img/post.png">
 <li/>
 <li>Sequelize
 <img width="480" height="380" src="./src/img/seq.png"> 
