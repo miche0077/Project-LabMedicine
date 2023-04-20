@@ -8,20 +8,15 @@ a possibilidade de modificá-lo em tempo real gerando dados confiáveis.
 </p>
 <h2> Tecnologias utilizadas<h2/>
 <ul>
-<li>ES6(ECMASCRIPT)
-<img src="./src/img/js.png">
+<li img src="./src/img/js.png">ES6(ECMASCRIPT) 
 </li>
-<li>PostgreSQL
-<img  src="./src/img/post.png">
+<li src="./src/img/post.png">PostgreSQL
 <li/>
-<li>Sequelize
-<img src="./src/img/seq.png"> 
+<li src="./src/img/seq.png">Sequelize
 <li/>
-<li>Express
-<img src="./src/img/express.png">
+<li src="./src/img/express.png">Express
 </li>
-<li>Insomnia
-<img src="./src/img/inso.png">
+<li src="./src/img/inso.png">Insomnia
 </li>
 </ul>
 
