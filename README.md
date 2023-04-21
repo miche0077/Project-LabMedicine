@@ -274,8 +274,10 @@ image.png
 
 1. status_in_the_system
 2. preencher com uma das seguintes opções
-    ```"ACTIVE"
-      "INACTIVE"```
+    ```
+    "ACTIVE"
+    "INACTIVE"
+      ```
 3. informar ID
 
 <i> Será verificado se o status_in_the_system esta correto e se o id do doctor existe </i>
@@ -286,3 +288,45 @@ image.png
 
 <em>Exemplo de sucess!</em>
 <img src="./src/img/sucessstatusdoctor.png">
+
+<h3>Encontrando todos os Doctor</h3>
+
+<p> Para encontrar os doctors você deve informar o status_in_the_system que deseja chamar no url no caso de não chamar um status_in_the_system especifico sera retornado todos os doctors você deve usar a seguinte rota: </p>
+
+```http
+  GET /api/patients?service_status=
+```
+<p> Sera  **obrigatorio** </p>
+
+1. service_status
+2. preencher com uma das seguintes opções:
+
+    ```"WAITING_FOR_SERVICE",
+      "IN_SERVICE",
+      "ATTENDED",
+      "NOT_ATTENDED"```
+
+  <em>Exemplo no caso que o status_in_the_system não exista</em>
+<img src="./src/img/getdoctornotfound.png">
+
+<em>Exemplo de status_in_the_system não especificado</em>
+<img src="./src/img/doctorgetall.png">
+
+<em>Exemplo de especificar status_in_the_system</em>
+<img src="./src/img/sucessstatusdoctor.png">
+
+
+<h3>Encontrando Doctors pelo id</h3>
+
+<p> Para encontrar os doctors pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+
+```http
+  GET /api/doctors/:id
+```
+<p> Sera  **obrigatorio**  informar um id valido </p>
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/doctoridnotfound.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/getdoctorid.png">
