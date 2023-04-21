@@ -72,7 +72,7 @@ O diretório DATABASE contém o arquivo index.js com dados de conexão com o ban
 O diretório MODELS inclui arquivos de modelo para criar  controladores com base em seus atributos.
 ROUTES possui as rotas URL padrão </p>
 
-<video src="./src/video/projecto.mp4">Video de apresentação</video>
+<video src="./src/video/projecto.mp4" type="video/mp4">Video de apresentação</video>
 
 <h2>Gerenciando Patients</h2>
 <h3>Cadastro</h3>
@@ -471,4 +471,4 @@ ROUTES possui as rotas URL padrão </p>
 <img src="./src/img/sucessatendimento.png">
 
 <em>Exemplo de que algum id não exista</em>
-<img src="./src/img/atendimientonotfound.png>
+<img src="./src/img/atendimientonotfound.png">
