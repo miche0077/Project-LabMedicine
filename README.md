@@ -237,7 +237,12 @@ ROUTES possui as rotas URL padrão </p>
 <br>
 <i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
 
-image.png
+<em>Exemplo de sucess!</em>
+<img src="./src/img/createdoctorsucess.png">
+
+<em>Exemplo de que o doctor ja exista</em>
+<img src="./src/img/notsucescreate.png>
+
 
 <h3>Atualizando Doctor</h3>
 <p> Para atualizar os dados de um Doctor deve informar o identificador(id) do doctor no URL  e precher os dados que quer atualizar você deve usar a seguinte rota: </p>
@@ -306,7 +311,7 @@ image.png
       "ATTENDED",
       "NOT_ATTENDED"```
 
-  <em>Exemplo no caso que o status_in_the_system não exista</em>
+<em>Exemplo no caso que o status_in_the_system não exista</em>
 <img src="./src/img/getdoctornotfound.png">
 
 <em>Exemplo de status_in_the_system não especificado</em>
@@ -330,3 +335,138 @@ image.png
 
 <em>Exemplo de sucess!</em>
 <img src="./src/img/getdoctorid.png">
+
+<h3>DELETE dos Doctors pelo id</h3>
+<p> Para deletar os doctor pelo identificador você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+
+```http
+  DELETE /api/doctors/:id
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1. informar id 
+2. que o id esteja no banco de dados 
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/deleteDoctornotfound.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/deletedoctor .png">
+
+<h2>Gerenciando Nurse</h2>
+
+<h3>Cadastro</h3>
+<p> Para cadastrar um novo Nurse(enfermeiro) deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
+
+```http
+  POST /api/nurses
+```
+<p> Será  **obrigatorio** </p>
+
+1. date_of_birth
+2. institution_of_teach_training 
+3. register_of_COFEN_UF
+
+<br>
+<i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
+
+<em>Exemplo no caso que o id ja exista</em>
+<img src="./src/img/nursenotcreate.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/nursecreate.png">
+
+<h3>Atualizando Nurse</h3>
+<p> Para atualizar os dados de um enfermeiro deve informar o identificador(id) do enfermeiro no URL  e precher os dados que quer atualizar você deve usar a seguinte rota: </p>
+
+```http
+  PUT /api/nurses/:id
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1. date_of_birth
+2. institution_of_teach_training 
+3. register_of_COFEN_UF
+
+<br>
+<i> Será verificado se o id do enfermeiro existe! </i>
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/nurseupdatenotfound.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/nurseupdate.png">
+
+<h3>Encontrando todos os Nurses</h3>
+
+<p> Para encontrar os enfermeiros  você deve usar a seguinte rota: </p>
+
+```http
+  GET /api/nurses
+```
+<p> Sera  **obrigatorio** </p>
+
+
+<em>Exemplo de suceso!</em>
+<img src="./src/img/nursegetsucess.png">
+
+<h3>Encontrando Nurses pelo id</h3>
+
+<p> Para encontrar os enfermeiros pelo id você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+
+```http
+  GET /api/nurses/:id
+```
+<p> Sera  **obrigatorio**  informar um id valido </p>
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/nursegetnotsucess.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/idnursesucess.png">
+
+<h3>DELETE nurse pelo id</h3>
+<p> Para deletar os enfermeiros pelo identificador você deve informar o id que deseja chamar no url você deve usar a seguinte rota: </p>
+
+```http
+  DELETE /api/nurses/:id
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1. informar id 
+2. que o id esteja no banco de dados 
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/deletenursenotfound.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/deletenurse.png">
+
+<h2>Gerenciando Atendimentos</h2>
+
+<h3>Cadastro</h3>
+<p> Para cadastrar um novo atendimento deve preencher os dados requeridos e você deve usar a seguinte rota: </p>
+
+```http
+  POST /api/atendimentos
+```
+<p> Será  **obrigatorio** </p>
+
+1.  doctor_id
+2.  patient_id
+
+
+<br>
+<i> Será verificado se os id existem no banco de dados por cada atendimento criado sera incrementado no registro dos atendimentos do Doctor e do Patient </i>
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/sucessatendimento.png">
+
+<em>Exemplo de que algum id não exista</em>
+<img src="./src/img/atendimientonotfound.png>
