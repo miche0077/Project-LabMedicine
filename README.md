@@ -72,6 +72,8 @@ O diretório DATABASE contém o arquivo index.js com dados de conexão com o ban
 O diretório MODELS inclui arquivos de modelo para criar  controladores com base em seus atributos.
 ROUTES possui as rotas URL padrão </p>
 
+<video src="./src/video/projecto.mp4">Video de apresentação</video>
+
 <h2>Gerenciando Patients</h2>
 <h3>Cadastro</h3>
 <p> Para cadastrar um novo paciente deve preencher os dados requeridos e você deve usar a seguinte rota: </p>

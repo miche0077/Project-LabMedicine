@@ -18,6 +18,8 @@ app.use(nursesRoutes);
 
 const atendimento = require("./src/routes/servicesDoctors");
 app.use(atendimento)
+
+//numero de porta do servidor
 app.listen(6666, () => {
   console.log("Server started on port 6666");
 });
