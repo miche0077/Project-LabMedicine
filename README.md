@@ -228,6 +228,7 @@ ROUTES possui as rotas URL padrão </p>
   POST /api/doctors
 ```
 <p> Será  **obrigatorio** </p>
+
 1.  date of birth
 2.  institution of teach training
 3.  register to CRM/UF 
@@ -236,8 +237,52 @@ ROUTES possui as rotas URL padrão </p>
 <br>
 <i> Será verificado se o cpf já está cadastrado no banco de dados se já estiver cadastrado não poderá continuar com o cadastro </i>
 
+image.png
+
+<h3>Atualizando Doctor</h3>
+<p> Para atualizar os dados de um Doctor deve informar o identificador(id) do doctor no URL  e precher os dados que quer atualizar você deve usar a seguinte rota: </p>
+
+```http
+  PUT /api/doctors/:id
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1.  date of birth
+2.  institution of teach training
+3.  register to CRM/UF 
+4.  clinical specialization
+
+<br>
+<i> Será verificado se o id do doctor existe! </i>
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/doctorNotFound.png">
+
 <em>Exemplo de sucess!</em>
 <img src="./src/img/createdoctorsucess.png">
 
-<em> Exemplo de que o cpf ja exista</em>
-<img src="./src/img/notsucescreate.png">
+<h3>Atualizando Doctor Status </h3>
+<p> Para atualizar o status de um Doctor deve preencher o estatus_in_the_system e informar o identificador(id) do doctor que quer atualizar você deve usar a seguinte rota: </p>
+
+```http
+  PUT /api/doctors/:id/status_in_the_system
+```
+
+<p> Sera  **obrigatorio** </p>
+
+1. status_in_the_system
+2. preencher com uma das seguintes opções
+    ```"ACTIVE"
+      "INACTIVE"```
+3. informar ID
+
+<i> Será verificado se o status_in_the_system esta correto e se o id do doctor existe </i>
+
+
+<em>Exemplo no caso que o id não exista</em>
+<img src="./src/img/notfounddoctorsstatus.png">
+
+<em>Exemplo de sucess!</em>
+<img src="./src/img/sucessstatusdoctor.png">
